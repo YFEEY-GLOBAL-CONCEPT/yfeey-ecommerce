@@ -21,7 +21,7 @@ const CustomerCare = () => {
         <main className="w-full lg:w-[70vw] lg:ml-auto px-6">
         <PageHeader 
           title="Customer Care" 
-          subtitle="We're here to help you with all your jewelry needs"
+          subtitle="We're here to help you with all your shopping needs"
         />
         
         <ContentSection title="Contact Information">
