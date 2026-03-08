@@ -29,7 +29,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-light text-foreground mb-4">Use License</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Permission is granted to temporarily download one copy of the materials on Linea Jewelry Inc.'s website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+                Permission is granted to temporarily download one copy of the materials on Yfeey Store's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1">
                 <li>Modify or copy the materials</li>
