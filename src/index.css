@@ -8,21 +8,21 @@
   :root {
     /* Core neutral palette */
     --background: 0 0% 100%;
-    --foreground: 0 0% 9%;
+    --foreground: 270 30% 15%;
     
     /* Status bar */
-    --status-bar: 0 0% 0%;
+    --status-bar: 270 40% 20%;
     --status-bar-foreground: 0 0% 100%;
     
     /* Navigation */
     --nav-background: 0 0% 100%;
-    --nav-foreground: 0 0% 20%;
-    --nav-hover: 0 0% 5%;
+    --nav-foreground: 270 30% 20%;
+    --nav-hover: 270 40% 12%;
     
     /* Interactive elements */
-    --primary: 0 0% 9%;
+    --primary: 270 40% 20%;
     --primary-foreground: 0 0% 98%;
-    --primary-hover: 0 0% 15%;
+    --primary-hover: 270 35% 30%;
     
     /* Subtle elements */
     --secondary: 0 0% 96%;
