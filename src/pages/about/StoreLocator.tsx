@@ -9,7 +9,7 @@ import AboutSidebar from "../../components/about/AboutSidebar";
 const StoreLocator = () => {
   const stores = [
     {
-      name: "LINEA Madison Avenue",
+      name: "YFEEY Madison Avenue",
       address: "789 Madison Avenue, New York, NY 10065",
       phone: "+1 (212) 555-0123",
       hours: "Mon-Sat: 10AM-8PM, Sun: 12PM-6PM",
