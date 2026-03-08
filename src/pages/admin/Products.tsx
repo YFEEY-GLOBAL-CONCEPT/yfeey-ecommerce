@@ -39,14 +39,14 @@ interface Product {
 }
 
 const initialProducts: Product[] = [
-  { id: 1, name: "Wireless Headphones", category: "Electronics", price: 129.99, stock: 45, status: "Active", image: "🎧" },
-  { id: 2, name: "Smart Watch Pro", category: "Electronics", price: 299.99, discountPrice: 249.99, stock: 23, status: "Active", image: "⌚" },
-  { id: 3, name: "Leather Backpack", category: "Fashion", price: 89.99, stock: 67, status: "Active", image: "🎒" },
-  { id: 4, name: "Running Shoes", category: "Fashion", price: 159.99, stock: 0, status: "Out of Stock", image: "👟" },
-  { id: 5, name: "Bluetooth Speaker", category: "Electronics", price: 79.99, stock: 120, status: "Active", image: "🔊" },
-  { id: 6, name: "Scented Candle Set", category: "Home & Living", price: 34.99, stock: 89, status: "Active", image: "🕯️" },
-  { id: 7, name: "Face Serum", category: "Beauty", price: 49.99, stock: 34, status: "Draft", image: "✨" },
-  { id: 8, name: "Silver Bracelet", category: "Accessories", price: 59.99, discountPrice: 44.99, stock: 56, status: "Active", image: "💎" },
+  { id: 1, name: "Oversized Hoodie", category: "Clothing", price: 89.99, stock: 45, status: "Active", image: "👕" },
+  { id: 2, name: "Classic Sneakers", category: "Shoes", price: 129.99, stock: 23, status: "Active", image: "👟" },
+  { id: 3, name: "Crossbody Bag", category: "Bags", price: 64.99, stock: 67, status: "Active", image: "👜" },
+  { id: 4, name: "Denim Jacket", category: "Clothing", price: 119.99, discountPrice: 89.99, stock: 38, status: "Active", image: "🧥" },
+  { id: 5, name: "Leather Boots", category: "Shoes", price: 189.99, stock: 0, status: "Out of Stock", image: "🥾" },
+  { id: 6, name: "Canvas Tote", category: "Bags", price: 49.99, stock: 120, status: "Active", image: "🛍️" },
+  { id: 7, name: "Linen Shirt", category: "Clothing", price: 59.99, stock: 34, status: "Draft", image: "👔" },
+  { id: 8, name: "Running Shoes", category: "Shoes", price: 159.99, discountPrice: 119.99, stock: 56, status: "Active", image: "🏃" },
 ];
 
 const statusColors: Record<string, string> = {
@@ -107,11 +107,9 @@ export default function Products() {
                   <Select>
                     <SelectTrigger><SelectValue placeholder="Select" /></SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="electronics">Electronics</SelectItem>
-                      <SelectItem value="fashion">Fashion</SelectItem>
-                      <SelectItem value="home">Home & Living</SelectItem>
-                      <SelectItem value="beauty">Beauty</SelectItem>
-                      <SelectItem value="accessories">Accessories</SelectItem>
+                      <SelectItem value="clothing">Clothing</SelectItem>
+                      <SelectItem value="shoes">Shoes</SelectItem>
+                      <SelectItem value="bags">Bags</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

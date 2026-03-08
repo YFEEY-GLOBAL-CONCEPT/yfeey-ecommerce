@@ -1,5 +1,5 @@
-import earringsCollection from "@/assets/earrings-collection.png";
-import linkBracelet from "@/assets/link-bracelet.png";
+import clothingCollection from "@/assets/clothing-collection.jpg";
+import shoesCollection from "@/assets/shoes-collection.jpg";
 import { Link } from "react-router-dom";
 
 const FiftyFiftySection = () => {
@@ -7,42 +7,25 @@ const FiftyFiftySection = () => {
     <section className="w-full mb-16 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <Link to="/category/earrings" className="block">
+          <Link to="/category/clothing" className="block">
             <div className="w-full aspect-square mb-3 overflow-hidden">
-              <img 
-                src={earringsCollection} 
-                alt="Earrings collection" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
+              <img src={clothingCollection} alt="Clothing collection" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
             </div>
           </Link>
-          <div className="">
-            <h3 className="text-sm font-normal text-foreground mb-1">
-              Organic Forms
-            </h3>
-            <p className="text-sm font-light text-foreground">
-              Nature-inspired pieces with fluid, sculptural details
-            </p>
+          <div>
+            <h3 className="text-sm font-normal text-foreground mb-1">Clothing</h3>
+            <p className="text-sm font-light text-foreground">Curated styles for every occasion</p>
           </div>
         </div>
-
         <div>
-          <Link to="/category/bracelets" className="block">
+          <Link to="/category/shoes" className="block">
             <div className="w-full aspect-square mb-3 overflow-hidden">
-              <img 
-                src={linkBracelet} 
-                alt="Chain link bracelet" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
+              <img src={shoesCollection} alt="Shoes collection" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
             </div>
           </Link>
-          <div className="">
-            <h3 className="text-sm font-normal text-foreground mb-1">
-              Chain Collection
-            </h3>
-            <p className="text-sm font-light text-foreground">
-              Refined links and connections in precious metals
-            </p>
+          <div>
+            <h3 className="text-sm font-normal text-foreground mb-1">Shoes</h3>
+            <p className="text-sm font-light text-foreground">Step into style with premium footwear</p>
           </div>
         </div>
       </div>

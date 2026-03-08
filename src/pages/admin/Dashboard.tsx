@@ -9,18 +9,18 @@ const stats = [
 ];
 
 const recentOrders = [
-  { id: "#ORD-001", customer: "John Doe", product: "Wireless Headphones", amount: "$129.99", status: "Delivered" },
-  { id: "#ORD-002", customer: "Jane Smith", product: "Smart Watch Pro", amount: "$299.99", status: "Processing" },
-  { id: "#ORD-003", customer: "Mike Johnson", product: "Leather Backpack", amount: "$89.99", status: "Shipped" },
-  { id: "#ORD-004", customer: "Sarah Williams", product: "Running Shoes", amount: "$159.99", status: "Pending" },
-  { id: "#ORD-005", customer: "Tom Brown", product: "Bluetooth Speaker", amount: "$79.99", status: "Delivered" },
+  { id: "#ORD-001", customer: "John Doe", product: "Oversized Hoodie", amount: "$89.99", status: "Delivered" },
+  { id: "#ORD-002", customer: "Jane Smith", product: "Classic Sneakers", amount: "$129.99", status: "Processing" },
+  { id: "#ORD-003", customer: "Mike Johnson", product: "Crossbody Bag", amount: "$64.99", status: "Shipped" },
+  { id: "#ORD-004", customer: "Sarah Williams", product: "Denim Jacket", amount: "$89.99", status: "Pending" },
+  { id: "#ORD-005", customer: "Tom Brown", product: "Leather Boots", amount: "$189.99", status: "Delivered" },
 ];
 
 const topProducts = [
-  { name: "Wireless Headphones", sales: 142, revenue: "$18,457" },
-  { name: "Smart Watch Pro", sales: 98, revenue: "$29,402" },
-  { name: "Leather Backpack", sales: 87, revenue: "$7,833" },
-  { name: "Running Shoes", sales: 76, revenue: "$12,159" },
+  { name: "Oversized Hoodie", sales: 142, revenue: "$12,778" },
+  { name: "Classic Sneakers", sales: 98, revenue: "$12,739" },
+  { name: "Crossbody Bag", sales: 87, revenue: "$5,654" },
+  { name: "Denim Jacket", sales: 76, revenue: "$6,839" },
 ];
 
 const statusColors: Record<string, string> = {
