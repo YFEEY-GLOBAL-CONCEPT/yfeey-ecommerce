@@ -21,11 +21,9 @@ interface Category {
 }
 
 const initialCategories: Category[] = [
-  { id: 1, name: "Electronics", slug: "electronics", productCount: 42, icon: "📱" },
-  { id: 2, name: "Fashion", slug: "fashion", productCount: 38, icon: "👗" },
-  { id: 3, name: "Home & Living", slug: "home-living", productCount: 25, icon: "🏠" },
-  { id: 4, name: "Beauty", slug: "beauty", productCount: 19, icon: "💄" },
-  { id: 5, name: "Accessories", slug: "accessories", productCount: 31, icon: "⌚" },
+  { id: 1, name: "Clothing", slug: "clothing", productCount: 42, icon: "👕" },
+  { id: 2, name: "Shoes", slug: "shoes", productCount: 38, icon: "👟" },
+  { id: 3, name: "Bags", slug: "bags", productCount: 25, icon: "👜" },
 ];
 
 export default function Categories() {
