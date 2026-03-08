@@ -18,7 +18,7 @@ const LargeHero = () => {
             <Button asChild className="bg-white text-foreground hover:bg-white/90 rounded-full px-6">
               <Link to="/category/shop">Shop Now</Link>
             </Button>
-            <Button asChild variant="outline" className="border-white text-white hover:bg-white/10 rounded-full px-6">
+            <Button asChild variant="outline" className="border-white text-white bg-transparent hover:bg-white/10 rounded-full px-6">
               <Link to="/category/clothing">Browse Categories</Link>
             </Button>
           </div>
