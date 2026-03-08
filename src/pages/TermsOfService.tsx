@@ -98,7 +98,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-light text-foreground mb-4">Intellectual Property</h2>
               <p className="text-muted-foreground leading-relaxed">
-                All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Linea Jewelry Inc. and is protected by copyright, trademark, and other intellectual property laws. Unauthorized use is prohibited.
+                All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Yfeey Store and is protected by copyright, trademark, and other intellectual property laws. Unauthorized use is prohibited.
               </p>
             </section>
 
