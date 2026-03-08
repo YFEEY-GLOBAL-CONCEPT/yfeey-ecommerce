@@ -72,19 +72,19 @@
   }
 
   .dark {
-    --background: 0 0% 9%;
+    --background: 270 30% 8%;
     --foreground: 0 0% 98%;
     
-    --status-bar: 0 0% 0%;
+    --status-bar: 270 40% 12%;
     --status-bar-foreground: 0 0% 100%;
     
-    --nav-background: 0 0% 9%;
+    --nav-background: 270 30% 8%;
     --nav-foreground: 0 0% 80%;
     --nav-hover: 0 0% 95%;
     
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --primary-hover: 0 0% 90%;
+    --primary: 270 40% 60%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 270 35% 50%;
     
     --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 80%;
