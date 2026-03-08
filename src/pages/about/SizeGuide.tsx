@@ -21,124 +21,87 @@ const SizeGuide = () => {
           subtitle="Find your perfect fit with our comprehensive sizing guide"
         />
         
-        <ContentSection title="Ring Sizing">
-          <div className="space-y-8">
-            <div className="bg-muted/10 rounded-lg p-8">
-              <h3 className="text-xl font-light text-foreground mb-6">How to Measure Your Ring Size</h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <h4 className="font-medium text-foreground">Method 1: Using a Ring You Own</h4>
-                  <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
-                    <li>Take a ring that fits comfortably on your desired finger</li>
-                    <li>Place it on a ruler and measure the inner diameter in millimeters</li>
-                    <li>Use our size chart below to find your size</li>
-                  </ol>
-                </div>
-                <div className="space-y-4">
-                  <h4 className="font-medium text-foreground">Method 2: Using String or Paper</h4>
-                  <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
-                    <li>Wrap string or paper around your finger where the ring will sit</li>
-                    <li>Mark where the material overlaps</li>
-                    <li>Measure the length in millimeters</li>
-                    <li>Divide by 3.14 to get the diameter</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse border border-border">
-                <thead>
-                  <tr className="bg-muted/20">
-                    <th className="border border-border p-3 text-left font-light">US Size</th>
-                    <th className="border border-border p-3 text-left font-light">UK Size</th>
-                    <th className="border border-border p-3 text-left font-light">EU Size</th>
-                    <th className="border border-border p-3 text-left font-light">Diameter (mm)</th>
-                    <th className="border border-border p-3 text-left font-light">Circumference (mm)</th>
+        <ContentSection title="Clothing Sizing">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse border border-border">
+              <thead>
+                <tr className="bg-muted/20">
+                  <th className="border border-border p-3 text-left font-light">Size</th>
+                  <th className="border border-border p-3 text-left font-light">US</th>
+                  <th className="border border-border p-3 text-left font-light">UK</th>
+                  <th className="border border-border p-3 text-left font-light">EU</th>
+                  <th className="border border-border p-3 text-left font-light">Chest (in)</th>
+                  <th className="border border-border p-3 text-left font-light">Waist (in)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { size: "XS", us: "0-2", uk: "4-6", eu: "32-34", chest: "30-32", waist: "24-26" },
+                  { size: "S", us: "4-6", uk: "8-10", eu: "36-38", chest: "33-35", waist: "27-29" },
+                  { size: "M", us: "8-10", uk: "12-14", eu: "40-42", chest: "36-38", waist: "30-32" },
+                  { size: "L", us: "12-14", uk: "16-18", eu: "44-46", chest: "39-41", waist: "33-35" },
+                  { size: "XL", us: "16-18", uk: "20-22", eu: "48-50", chest: "42-44", waist: "36-38" },
+                  { size: "XXL", us: "20-22", uk: "24-26", eu: "52-54", chest: "45-47", waist: "39-41" },
+                ].map((row, index) => (
+                  <tr key={index} className="hover:bg-muted/10">
+                    <td className="border border-border p-3 font-medium">{row.size}</td>
+                    <td className="border border-border p-3">{row.us}</td>
+                    <td className="border border-border p-3">{row.uk}</td>
+                    <td className="border border-border p-3">{row.eu}</td>
+                    <td className="border border-border p-3">{row.chest}</td>
+                    <td className="border border-border p-3">{row.waist}</td>
                   </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { us: "5", uk: "J", eu: "49", diameter: "15.6", circumference: "49.0" },
-                    { us: "5.5", uk: "K", eu: "50", diameter: "16.0", circumference: "50.2" },
-                    { us: "6", uk: "L", eu: "51", diameter: "16.4", circumference: "51.5" },
-                    { us: "6.5", uk: "M", eu: "52", diameter: "16.8", circumference: "52.8" },
-                    { us: "7", uk: "N", eu: "54", diameter: "17.2", circumference: "54.0" },
-                    { us: "7.5", uk: "O", eu: "55", diameter: "17.6", circumference: "55.3" },
-                    { us: "8", uk: "P", eu: "56", diameter: "18.0", circumference: "56.5" },
-                    { us: "8.5", uk: "Q", eu: "57", diameter: "18.4", circumference: "57.8" },
-                    { us: "9", uk: "R", eu: "59", diameter: "18.8", circumference: "59.1" }
-                  ].map((size, index) => (
-                    <tr key={index} className="hover:bg-muted/10">
-                      <td className="border border-border p-3">{size.us}</td>
-                      <td className="border border-border p-3">{size.uk}</td>
-                      <td className="border border-border p-3">{size.eu}</td>
-                      <td className="border border-border p-3">{size.diameter}</td>
-                      <td className="border border-border p-3">{size.circumference}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                ))}
+              </tbody>
+            </table>
           </div>
         </ContentSection>
 
-        <ContentSection title="Bracelet & Necklace Sizing">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-6">
-              <h3 className="text-xl font-light text-foreground">Bracelet Sizes</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Small</span>
-                  <span className="text-foreground">6.5" - 7"</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Medium</span>
-                  <span className="text-foreground">7" - 7.5"</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Large</span>
-                  <span className="text-foreground">7.5" - 8"</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="space-y-6">
-              <h3 className="text-xl font-light text-foreground">Necklace Lengths</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Choker</span>
-                  <span className="text-foreground">14" - 16"</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Princess</span>
-                  <span className="text-foreground">17" - 19"</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Matinee</span>
-                  <span className="text-foreground">20" - 24"</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Opera</span>
-                  <span className="text-foreground">28" - 36"</span>
-                </div>
-              </div>
-            </div>
+        <ContentSection title="Shoe Sizing">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse border border-border">
+              <thead>
+                <tr className="bg-muted/20">
+                  <th className="border border-border p-3 text-left font-light">US</th>
+                  <th className="border border-border p-3 text-left font-light">UK</th>
+                  <th className="border border-border p-3 text-left font-light">EU</th>
+                  <th className="border border-border p-3 text-left font-light">Foot Length (cm)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { us: "6", uk: "5", eu: "38", cm: "23.5" },
+                  { us: "7", uk: "6", eu: "39", cm: "24.1" },
+                  { us: "8", uk: "7", eu: "40", cm: "24.8" },
+                  { us: "9", uk: "8", eu: "41", cm: "25.4" },
+                  { us: "10", uk: "9", eu: "42", cm: "26.0" },
+                  { us: "11", uk: "10", eu: "43", cm: "26.7" },
+                  { us: "12", uk: "11", eu: "44", cm: "27.3" },
+                ].map((row, index) => (
+                  <tr key={index} className="hover:bg-muted/10">
+                    <td className="border border-border p-3">{row.us}</td>
+                    <td className="border border-border p-3">{row.uk}</td>
+                    <td className="border border-border p-3">{row.eu}</td>
+                    <td className="border border-border p-3">{row.cm}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </ContentSection>
 
         <ContentSection title="Need Help?">
           <div className="space-y-6">
             <p className="text-muted-foreground">
-              Still unsure about sizing? Our jewelry consultants are here to help you find the perfect fit. 
-              Download our printable size guide or schedule a virtual consultation.
+              Still unsure about sizing? Our style consultants are here to help you find the perfect fit. 
+              Download our printable size guide or contact our support team.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="outline" className="rounded-none">
                 Download PDF Guide
               </Button>
               <Button className="rounded-none">
-                Schedule Consultation
+                Contact Support
               </Button>
             </div>
           </div>
