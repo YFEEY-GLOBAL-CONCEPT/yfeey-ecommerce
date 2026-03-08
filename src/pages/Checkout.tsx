@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Minus, Plus, CreditCard, Check, ShieldCheck, Lock } from "lucide-react";
 import CheckoutHeader from "../components/header/CheckoutHeader";
 import Footer from "../components/footer/Footer";
@@ -9,6 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useStore } from "@/contexts/StoreContext";
 import { Link } from "react-router-dom";
+import OrderReceipt from "@/components/checkout/OrderReceipt";
 
 const Checkout = () => {
   const { cartItems, updateCartQuantity, cartTotal, clearCart } = useStore();
@@ -21,13 +22,31 @@ const Checkout = () => {
   const [paymentDetails, setPaymentDetails] = useState({ cardNumber: "", expiryDate: "", cvv: "", cardholderName: "" });
   const [isProcessing, setIsProcessing] = useState(false);
   const [paymentComplete, setPaymentComplete] = useState(false);
+  const [completedOrderData, setCompletedOrderData] = useState<{
+    items: typeof cartItems;
+    subtotal: number;
+    shippingCost: number;
+    total: number;
+    orderNumber: string;
+  } | null>(null);
 
   const shippingCost = shippingOption === "express" ? 14.99 : shippingOption === "overnight" ? 29.99 : cartTotal >= 50 ? 0 : 5.99;
   const total = cartTotal + shippingCost;
 
+  const shippingLabel = shippingOption === "express" ? "Express" : shippingOption === "overnight" ? "Overnight" : "Standard";
+
   const handleCompleteOrder = async () => {
     setIsProcessing(true);
+    // Snapshot order data before clearing cart
+    const orderData = {
+      items: [...cartItems],
+      subtotal: cartTotal,
+      shippingCost,
+      total,
+      orderNumber: `YF-${Date.now().toString(36).toUpperCase()}`,
+    };
     await new Promise((r) => setTimeout(r, 2000));
+    setCompletedOrderData(orderData);
     setIsProcessing(false);
     setPaymentComplete(true);
     clearCart();
