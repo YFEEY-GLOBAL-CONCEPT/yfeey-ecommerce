@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Minus, Plus, CreditCard, Check, ShieldCheck, Lock } from "lucide-react";
 import CheckoutHeader from "../components/header/CheckoutHeader";
 import Footer from "../components/footer/Footer";
@@ -9,6 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useStore } from "@/contexts/StoreContext";
 import { Link } from "react-router-dom";
+import OrderReceipt from "@/components/checkout/OrderReceipt";
 
 const Checkout = () => {
   const { cartItems, updateCartQuantity, cartTotal, clearCart } = useStore();
@@ -21,31 +22,71 @@ const Checkout = () => {
   const [paymentDetails, setPaymentDetails] = useState({ cardNumber: "", expiryDate: "", cvv: "", cardholderName: "" });
   const [isProcessing, setIsProcessing] = useState(false);
   const [paymentComplete, setPaymentComplete] = useState(false);
+  const [completedOrderData, setCompletedOrderData] = useState<{
+    items: typeof cartItems;
+    subtotal: number;
+    shippingCost: number;
+    total: number;
+    orderNumber: string;
+  } | null>(null);
 
   const shippingCost = shippingOption === "express" ? 14.99 : shippingOption === "overnight" ? 29.99 : cartTotal >= 50 ? 0 : 5.99;
   const total = cartTotal + shippingCost;
 
+  const shippingLabel = shippingOption === "express" ? "Express" : shippingOption === "overnight" ? "Overnight" : "Standard";
+
   const handleCompleteOrder = async () => {
     setIsProcessing(true);
+    // Snapshot order data before clearing cart
+    const orderData = {
+      items: [...cartItems],
+      subtotal: cartTotal,
+      shippingCost,
+      total,
+      orderNumber: `YF-${Date.now().toString(36).toUpperCase()}`,
+    };
     await new Promise((r) => setTimeout(r, 2000));
+    setCompletedOrderData(orderData);
     setIsProcessing(false);
     setPaymentComplete(true);
     clearCart();
   };
 
-  if (paymentComplete) {
+  if (paymentComplete && completedOrderData) {
     return (
       <div className="min-h-screen bg-background">
         <CheckoutHeader />
         <main className="pt-6 pb-12">
-          <div className="max-w-lg mx-auto px-6 text-center py-20">
+          <div className="max-w-2xl mx-auto px-6 text-center py-10">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <Check className="w-8 h-8 text-green-600" />
             </div>
             <h1 className="text-2xl font-light mb-3">Order Confirmed!</h1>
-            <p className="text-muted-foreground mb-2">Thank you for your purchase. Your order has been placed successfully.</p>
-            <p className="text-sm text-muted-foreground mb-8">A confirmation email has been sent to {customerDetails.email || "your email address"}.</p>
-            <p className="text-lg font-medium mb-8">Order Total: ${total.toFixed(2)}</p>
+            <p className="text-muted-foreground mb-8">A confirmation email has been sent to {customerDetails.email || "your email address"}.</p>
+          </div>
+
+          <div className="px-6">
+            <OrderReceipt
+              orderNumber={completedOrderData.orderNumber}
+              orderDate={new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+              customerEmail={customerDetails.email}
+              customerName={`${customerDetails.firstName} ${customerDetails.lastName}`.trim() || "Customer"}
+              shippingAddress={shippingAddress}
+              shippingMethod={shippingLabel}
+              shippingCost={completedOrderData.shippingCost}
+              items={completedOrderData.items.map((i) => ({
+                name: i.name,
+                size: i.size,
+                quantity: i.quantity,
+                price: i.price,
+                discountPrice: i.discountPrice ?? undefined,
+              }))}
+              subtotal={completedOrderData.subtotal}
+              total={completedOrderData.total}
+            />
+          </div>
+
+          <div className="text-center mt-10">
             <Button asChild className="rounded-none"><Link to="/category/shop">Continue Shopping</Link></Button>
           </div>
         </main>
