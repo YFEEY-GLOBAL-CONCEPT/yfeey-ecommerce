@@ -71,7 +71,7 @@ const CustomerCare = () => {
                 What warranty do you offer on your jewelry?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                All LINEA jewelry comes with a lifetime warranty against manufacturing defects. This includes free repairs for normal wear and tear, stone tightening, and professional cleaning.
+                All Yfeey products come with a 1-year warranty against manufacturing defects. This includes free repairs for stitching issues, sole separation, and hardware malfunctions.
               </AccordionContent>
             </AccordionItem>
 
