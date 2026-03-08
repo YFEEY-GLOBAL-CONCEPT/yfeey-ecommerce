@@ -121,7 +121,7 @@ const PrivacyPolicy = () => {
                 If you have any questions about this Privacy Policy or our privacy practices, please contact us at:
               </p>
               <div className="mt-4 text-muted-foreground">
-                <p>Email: privacy@lineajewelry.com</p>
+                <p>Email: privacy@yfeey.com</p>
                 <p>Phone: +1 (212) 555-0123</p>
                 <p>Address: 123 Madison Avenue, New York, NY 10016</p>
               </div>

@@ -43,7 +43,7 @@ const StoreLocator = () => {
         <main className="w-full lg:w-[70vw] lg:ml-auto px-6">
         <PageHeader 
           title="Store Locator" 
-          subtitle="Visit us in person for a personalized jewelry experience"
+          subtitle="Visit us in person for a personalized shopping experience"
         />
         
         <ContentSection title="Interactive Store Map">

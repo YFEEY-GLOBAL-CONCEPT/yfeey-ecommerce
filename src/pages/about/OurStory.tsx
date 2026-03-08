@@ -18,7 +18,7 @@ const OurStory = () => {
         <main className="w-full lg:w-[70vw] lg:ml-auto px-6">
           <PageHeader 
             title="Our Story" 
-            subtitle="A journey of passion, craftsmanship, and timeless elegance"
+            subtitle="A journey of passion, quality fashion, and unbeatable value"
           />
           
           <ContentSection>

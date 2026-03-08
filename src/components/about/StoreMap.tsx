@@ -25,7 +25,7 @@ const stores: Store[] = [
     lng: -118.4014
   },
   {
-    name: "LINEA SoHo",
+    name: "YFEEY SoHo",
     address: "123 Spring Street, New York, NY 10012", 
     phone: "+1 (212) 555-0789",
     hours: "Mon-Sat: 11AM-8PM, Sun: 12PM-7PM",

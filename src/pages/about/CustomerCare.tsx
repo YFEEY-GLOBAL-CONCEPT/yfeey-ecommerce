@@ -98,7 +98,7 @@ const CustomerCare = () => {
                 How can I verify the authenticity of my jewelry?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Every LINEA piece comes with a certificate of authenticity and is hallmarked. You can verify authenticity on our website using your unique piece number or contact our customer care team.
+                Every Yfeey product comes with a certificate of authenticity. You can verify authenticity on our website using your unique order number or contact our customer care team.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
