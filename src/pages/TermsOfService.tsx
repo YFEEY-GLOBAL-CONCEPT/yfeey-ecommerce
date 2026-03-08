@@ -4,7 +4,7 @@ import Footer from "../components/footer/Footer";
 
 const TermsOfService = () => {
   useEffect(() => {
-    document.title = "Terms of Service - Linea Jewelry";
+    document.title = "Terms of Service - Yfeey Store";
   }, []);
 
   return (
