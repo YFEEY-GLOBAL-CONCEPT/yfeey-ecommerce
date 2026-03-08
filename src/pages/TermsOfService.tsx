@@ -105,7 +105,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-light text-foreground mb-4">Limitation of Liability</h2>
               <p className="text-muted-foreground leading-relaxed">
-                In no event shall Linea Jewelry Inc. or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on our website or products, even if we have been notified of the possibility of such damage.
+                In no event shall Yfeey Store or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on our website or products, even if we have been notified of the possibility of such damage.
               </p>
             </section>
 
