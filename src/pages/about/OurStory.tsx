@@ -18,7 +18,7 @@ const OurStory = () => {
         <main className="w-full lg:w-[70vw] lg:ml-auto px-6">
           <PageHeader 
             title="Our Story" 
-            subtitle="A journey of passion, craftsmanship, and timeless elegance"
+            subtitle="A journey of passion, quality fashion, and unbeatable value"
           />
           
           <ContentSection>
@@ -26,7 +26,7 @@ const OurStory = () => {
               image="/founders.png"
               imageAlt="Company founders"
               title="Founded on Passion"
-              content="LINEA Jewelry was born from a shared vision of creating timeless pieces that transcend fleeting trends. Our founders, united by their passion for exceptional craftsmanship and sustainable practices, established the brand with a commitment to creating jewelry that tells a story - your story."
+              content="Yfeey Store was born from a shared vision of making quality fashion accessible to everyone. Our founders, united by their passion for great design and fair pricing, established the brand with a commitment to offering clothing, shoes, and bags that make you look and feel your best."
               imagePosition="left"
             />
           </ContentSection>

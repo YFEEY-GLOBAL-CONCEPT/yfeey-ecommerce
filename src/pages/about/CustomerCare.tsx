@@ -21,7 +21,7 @@ const CustomerCare = () => {
         <main className="w-full lg:w-[70vw] lg:ml-auto px-6">
         <PageHeader 
           title="Customer Care" 
-          subtitle="We're here to help you with all your jewelry needs"
+          subtitle="We're here to help you with all your shopping needs"
         />
         
         <ContentSection title="Contact Information">
@@ -33,7 +33,7 @@ const CustomerCare = () => {
             </div>
             <div className="space-y-4">
               <h3 className="text-lg font-light text-foreground">Email</h3>
-              <p className="text-muted-foreground">care@lineajewelry.com</p>
+              <p className="text-muted-foreground">care@yfeey.com</p>
               <p className="text-sm text-muted-foreground">Response within 24 hours</p>
             </div>
             <div className="space-y-4">
@@ -71,7 +71,7 @@ const CustomerCare = () => {
                 What warranty do you offer on your jewelry?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                All LINEA jewelry comes with a lifetime warranty against manufacturing defects. This includes free repairs for normal wear and tear, stone tightening, and professional cleaning.
+                All Yfeey products come with a 1-year warranty against manufacturing defects. This includes free repairs for stitching issues, sole separation, and hardware malfunctions.
               </AccordionContent>
             </AccordionItem>
 
@@ -86,7 +86,7 @@ const CustomerCare = () => {
 
             <AccordionItem value="care" className="border border-border rounded-lg px-6">
               <AccordionTrigger className="text-left hover:no-underline">
-                How should I care for my LINEA jewelry?
+                How should I care for my Yfeey products?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
                 Store pieces separately in soft pouches, avoid contact with chemicals and cosmetics, and clean gently with a soft cloth. We recommend professional cleaning every 6-12 months.
@@ -98,7 +98,7 @@ const CustomerCare = () => {
                 How can I verify the authenticity of my jewelry?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Every LINEA piece comes with a certificate of authenticity and is hallmarked. You can verify authenticity on our website using your unique piece number or contact our customer care team.
+                Every Yfeey product comes with a certificate of authenticity. You can verify authenticity on our website using your unique order number or contact our customer care team.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

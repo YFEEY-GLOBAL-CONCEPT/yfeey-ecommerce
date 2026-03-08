@@ -17,7 +17,7 @@ const Sustainability = () => {
         <main className="w-full lg:w-[70vw] lg:ml-auto px-6">
         <PageHeader 
           title="Sustainability" 
-          subtitle="Creating beautiful jewelry while protecting our planet for future generations"
+          subtitle="Creating quality fashion while protecting our planet for future generations"
         />
         
         <ContentSection title="Our Environmental Commitment">
@@ -71,7 +71,7 @@ const Sustainability = () => {
               <div className="space-y-4">
                 <h3 className="text-lg font-light text-foreground">Take-Back Program</h3>
                 <p className="text-muted-foreground">
-                  When you're ready for something new, we'll take back your LINEA jewelry to be recycled into future pieces.
+                  When you're ready for something new, we'll take back your Yfeey products to be recycled into future collections.
                 </p>
               </div>
             </div>
