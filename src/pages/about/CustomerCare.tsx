@@ -86,7 +86,7 @@ const CustomerCare = () => {
 
             <AccordionItem value="care" className="border border-border rounded-lg px-6">
               <AccordionTrigger className="text-left hover:no-underline">
-                How should I care for my LINEA jewelry?
+                How should I care for my Yfeey products?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
                 Store pieces separately in soft pouches, avoid contact with chemicals and cosmetics, and clean gently with a soft cloth. We recommend professional cleaning every 6-12 months.
