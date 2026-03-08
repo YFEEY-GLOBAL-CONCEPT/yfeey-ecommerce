@@ -22,7 +22,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-light text-foreground mb-4">Agreement to Terms</h2>
               <p className="text-muted-foreground leading-relaxed">
-                By accessing and using the Linea Jewelry Inc. website and services, you accept and agree to be bound by the terms and provision of this agreement. These Terms of Service govern your use of our website, products, and services.
+                By accessing and using the Yfeey Store website and services, you accept and agree to be bound by the terms and provision of this agreement. These Terms of Service govern your use of our website, products, and services.
               </p>
             </section>
 
