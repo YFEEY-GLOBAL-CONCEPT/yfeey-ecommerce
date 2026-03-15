@@ -59,7 +59,7 @@ const Navigation = () => {
         </div>
 
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <Link to="/" className="block text-xl font-semibold tracking-wider text-foreground">YFEEY</Link>
+          <Link to="/" className="block text-xl font-semibold tracking-wider text-foreground uppercase">yfeey</Link>
         </div>
 
         <div className="flex items-center space-x-2">
@@ -164,7 +164,7 @@ const Navigation = () => {
                           <p className="text-xs text-muted-foreground">{product.category}</p>
                           <h3 className="text-sm font-medium group-hover:underline">{product.name}</h3>
                           <p className="text-sm font-light mt-1">
-                            {product.discountPrice ? <><span className="line-through text-muted-foreground mr-1">${product.price}</span>${product.discountPrice}</> : `$${product.price}`}
+                            {product.discountPrice ? <><span className="line-through text-muted-foreground mr-1">€{product.price}</span>€{product.discountPrice}</> : `€${product.price}`}
                           </p>
                         </div>
                       </Link>

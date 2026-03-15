@@ -131,7 +131,7 @@ const Checkout = () => {
                         <h3 className="text-sm font-light truncate">{item.name}</h3>
                         {item.size && <p className="text-xs text-muted-foreground">Size: {item.size}</p>}
                       </div>
-                      <span className="text-sm font-medium">${((item.discountPrice ?? item.price) * item.quantity).toFixed(2)}</span>
+                      <span className="text-sm font-medium">€{((item.discountPrice ?? item.price) * item.quantity).toFixed(2)}</span>
                     </div>
                   ))}
                 </div>
@@ -146,9 +146,9 @@ const Checkout = () => {
                 )}
 
                 <div className="border-t border-border mt-6 pt-4 space-y-2 text-sm">
-                  <div className="flex justify-between"><span className="text-muted-foreground">Subtotal</span><span>${cartTotal.toFixed(2)}</span></div>
-                  <div className="flex justify-between"><span className="text-muted-foreground">Shipping</span><span>{shippingCost === 0 ? "Free" : `$${shippingCost.toFixed(2)}`}</span></div>
-                  <div className="border-t border-border pt-2 flex justify-between font-medium text-base"><span>Total</span><span>${total.toFixed(2)}</span></div>
+                  <div className="flex justify-between"><span className="text-muted-foreground">Subtotal</span><span>€{cartTotal.toFixed(2)}</span></div>
+                  <div className="flex justify-between"><span className="text-muted-foreground">Shipping</span><span>{shippingCost === 0 ? "Free" : `€${shippingCost.toFixed(2)}`}</span></div>
+                  <div className="border-t border-border pt-2 flex justify-between font-medium text-base"><span>Total</span><span>€{total.toFixed(2)}</span></div>
                 </div>
 
                 <div className="flex items-center gap-2 mt-4 text-xs text-muted-foreground">
@@ -190,9 +190,9 @@ const Checkout = () => {
                 <div className="mt-6 pt-6 border-t border-border">
                   <h3 className="text-base font-light mb-4">Shipping Method</h3>
                   <RadioGroup value={shippingOption} onValueChange={setShippingOption} className="space-y-3">
-                    <div className="flex items-center justify-between border border-border p-4"><div className="flex items-center gap-3"><RadioGroupItem value="standard" id="standard" /><Label htmlFor="standard" className="cursor-pointer"><span className="text-sm">Standard Shipping (5-7 days)</span></Label></div><span className="text-sm">{cartTotal >= 50 ? "Free" : "$5.99"}</span></div>
-                    <div className="flex items-center justify-between border border-border p-4"><div className="flex items-center gap-3"><RadioGroupItem value="express" id="express" /><Label htmlFor="express" className="cursor-pointer"><span className="text-sm">Express Shipping (2-3 days)</span></Label></div><span className="text-sm">$14.99</span></div>
-                    <div className="flex items-center justify-between border border-border p-4"><div className="flex items-center gap-3"><RadioGroupItem value="overnight" id="overnight" /><Label htmlFor="overnight" className="cursor-pointer"><span className="text-sm">Overnight Shipping</span></Label></div><span className="text-sm">$29.99</span></div>
+                    <div className="flex items-center justify-between border border-border p-4"><div className="flex items-center gap-3"><RadioGroupItem value="standard" id="standard" /><Label htmlFor="standard" className="cursor-pointer"><span className="text-sm">Standard Shipping (5-7 days)</span></Label></div><span className="text-sm">{cartTotal >= 50 ? "Free" : "€5.99"}</span></div>
+                    <div className="flex items-center justify-between border border-border p-4"><div className="flex items-center gap-3"><RadioGroupItem value="express" id="express" /><Label htmlFor="express" className="cursor-pointer"><span className="text-sm">Express Shipping (2-3 days)</span></Label></div><span className="text-sm">€14.99</span></div>
+                    <div className="flex items-center justify-between border border-border p-4"><div className="flex items-center gap-3"><RadioGroupItem value="overnight" id="overnight" /><Label htmlFor="overnight" className="cursor-pointer"><span className="text-sm">Overnight Shipping</span></Label></div><span className="text-sm">€29.99</span></div>
                   </RadioGroup>
                 </div>
               </div>
@@ -213,7 +213,7 @@ const Checkout = () => {
                 </div>
 
                 <Button onClick={handleCompleteOrder} disabled={isProcessing} className="w-full h-14 mt-8 rounded-none text-base" size="lg">
-                  {isProcessing ? "Processing..." : `Pay $${total.toFixed(2)}`}
+                  {isProcessing ? "Processing..." : `Pay €${total.toFixed(2)}`}
                 </Button>
               </div>
             </div>

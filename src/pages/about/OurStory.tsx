@@ -26,7 +26,7 @@ const OurStory = () => {
               image="/founders.png"
               imageAlt="Company founders"
               title="Founded on Passion"
-              content="Yfeey Store was born from a shared vision of making quality fashion accessible to everyone. Our founders, united by their passion for great design and fair pricing, established the brand with a commitment to offering clothing, shoes, and bags that make you look and feel your best."
+              content="yfeey was born from a shared vision of making quality fashion accessible to everyone. Our founders, united by their passion for great design and fair pricing, established the brand with a commitment to offering clothing, shoes, and bags that make you look and feel your best."
               imagePosition="left"
             />
           </ContentSection>

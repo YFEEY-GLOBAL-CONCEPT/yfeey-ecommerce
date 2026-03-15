@@ -6,7 +6,7 @@ const LargeHero = () => {
   return (
     <section className="w-full mb-16 px-6">
       <div className="w-full aspect-[16/9] mb-6 overflow-hidden relative">
-        <img src={heroImage} alt="Yfeey Store - Clothing, Shoes & Bags" className="w-full h-full object-cover" />
+        <img src={heroImage} alt="yfeey - Clothing, Shoes &amp; Bags" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-8 md:p-12">
           <h1 className="text-3xl md:text-5xl font-semibold text-white mb-3">
             Smart Shopping Starts Here

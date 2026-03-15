@@ -6,7 +6,7 @@ const Footer = () => {
       <div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
           <div>
-            <h2 className="text-xl font-semibold tracking-wider mb-4">YFEEY</h2>
+            <h2 className="text-xl font-semibold tracking-wider mb-4 uppercase">yfeey</h2>
             <p className="text-sm font-light text-muted-foreground leading-relaxed max-w-md mb-6">
               Quality clothing, shoes, and bags for the modern shopper. Unbeatable prices, seamless experience.
             </p>
@@ -14,7 +14,8 @@ const Footer = () => {
               <div>
                 <p className="font-normal text-foreground mb-1">Contact</p>
                 <p>support@yfeey.com</p>
-                <p>+1 (555) 123-4567</p>
+                <p>+44 624 403102</p>
+                <p>Isle of Man</p>
               </div>
             </div>
           </div>
@@ -55,7 +56,7 @@ const Footer = () => {
       <div className="border-t border-border -mx-6 px-6 pt-2">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm font-light text-muted-foreground mb-1 md:mb-0">
-            © 2025 Yfeey Store. All rights reserved.
+            © 2025 yfeey. All rights reserved. <span className="ml-2 opacity-50 text-xs">build by yfeey.com</span>
           </p>
           <div className="flex space-x-6">
             <Link to="/privacy-policy" className="text-sm font-light text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</Link>

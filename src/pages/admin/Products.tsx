@@ -93,11 +93,11 @@ export default function Products() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <Label>Price ($)</Label>
-                  <Input type="number" placeholder="0.00" />
+                  <Label>Price (€)</Label>
+                  <Input type="number" step="0.01" />
                 </div>
-                <div>
-                  <Label>Discount Price ($)</Label>
+                <div className="space-y-2">
+                  <Label>Discount Price (€)</Label>
                   <Input type="number" placeholder="0.00" />
                 </div>
               </div>
@@ -168,14 +168,14 @@ export default function Products() {
                     </td>
                     <td className="p-4 text-muted-foreground">{product.category}</td>
                     <td className="p-4">
-                      {product.discountPrice ? (
-                        <div>
-                          <span className="line-through text-muted-foreground mr-2">${product.price}</span>
-                          <span className="font-medium">${product.discountPrice}</span>
-                        </div>
-                      ) : (
-                        <span>${product.price}</span>
-                      )}
+                        {product.discountPrice ? (
+                          <>
+                            <span className="line-through text-muted-foreground mr-2">€{product.price}</span>
+                            <span className="font-medium">€{product.discountPrice}</span>
+                          </>
+                        ) : (
+                          <span>€{product.price}</span>
+                        )}
                     </td>
                     <td className="p-4">{product.stock}</td>
                     <td className="p-4">

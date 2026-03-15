@@ -4,7 +4,7 @@ import Footer from "../components/footer/Footer";
 
 const TermsOfService = () => {
   useEffect(() => {
-    document.title = "Terms of Service - Yfeey Store";
+    document.title = "Terms of Service - yfeey";
   }, []);
 
   return (
@@ -22,14 +22,14 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-light text-foreground mb-4">Agreement to Terms</h2>
               <p className="text-muted-foreground leading-relaxed">
-                By accessing and using the Yfeey Store website and services, you accept and agree to be bound by the terms and provision of this agreement. These Terms of Service govern your use of our website, products, and services.
+                By accessing and using the yfeey website and services, you accept and agree to be bound by the terms and provision of this agreement. These Terms of Service govern your use of our website, products, and services.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-light text-foreground mb-4">Use License</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Permission is granted to temporarily download one copy of the materials on Yfeey Store's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+                Permission is granted to temporarily download one copy of the materials on yfeey's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1">
                 <li>Modify or copy the materials</li>
@@ -98,14 +98,14 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-light text-foreground mb-4">Intellectual Property</h2>
               <p className="text-muted-foreground leading-relaxed">
-                All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Yfeey Store and is protected by copyright, trademark, and other intellectual property laws. Unauthorized use is prohibited.
+                All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of yfeey and is protected by copyright, trademark, and other intellectual property laws. Unauthorized use is prohibited.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-light text-foreground mb-4">Limitation of Liability</h2>
               <p className="text-muted-foreground leading-relaxed">
-                In no event shall Yfeey Store or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on our website or products, even if we have been notified of the possibility of such damage.
+                In no event shall yfeey or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on our website or products, even if we have been notified of the possibility of such damage.
               </p>
             </section>
 

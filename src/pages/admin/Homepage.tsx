@@ -16,7 +16,7 @@ export default function Homepage() {
       <Card>
         <CardHeader><CardTitle className="text-lg">Hero Banner</CardTitle></CardHeader>
         <CardContent className="space-y-4">
-          <div><Label>Headline</Label><Input defaultValue="Smart Shopping Starts at Yfeey Store" /></div>
+          <div><Label>Headline</Label><Input defaultValue="Smart Shopping Starts at yfeey" /></div>
           <div><Label>Subtext</Label><Textarea defaultValue="Discover quality products, unbeatable prices, and seamless online shopping." /></div>
           <div className="grid grid-cols-2 gap-4">
             <div><Label>Primary Button Text</Label><Input defaultValue="Shop Now" /></div>

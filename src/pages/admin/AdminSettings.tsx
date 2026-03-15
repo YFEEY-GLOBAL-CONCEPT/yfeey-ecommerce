@@ -17,7 +17,7 @@ export default function AdminSettings() {
       <Card>
         <CardHeader><CardTitle className="text-lg">Store Information</CardTitle></CardHeader>
         <CardContent className="space-y-4">
-          <div><Label>Store Name</Label><Input defaultValue="Yfeey Store" /></div>
+          <div><Label>Store Name</Label><Input defaultValue="yfeey" /></div>
           <div><Label>Store Description</Label><Textarea defaultValue="Your one-stop online marketplace for quality products at unbeatable prices." /></div>
           <div className="grid grid-cols-2 gap-4">
             <div><Label>Support Email</Label><Input defaultValue="support@yfeey.com" /></div>

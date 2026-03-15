@@ -104,14 +104,14 @@ const ProductDetail = () => {
               <div className="flex items-center gap-3">
                 {product.discountPrice ? (
                   <>
-                    <span className="text-lg line-through text-muted-foreground">${product.price.toFixed(2)}</span>
-                    <span className="text-2xl font-semibold text-destructive">${product.discountPrice.toFixed(2)}</span>
+                    <span className="text-lg line-through text-muted-foreground">€{product.price.toFixed(2)}</span>
+                    <span className="text-2xl font-semibold text-destructive">€{product.discountPrice.toFixed(2)}</span>
                     <span className="text-sm font-medium text-destructive bg-destructive/10 px-2 py-0.5 rounded">
                       -{Math.round((1 - product.discountPrice / product.price) * 100)}% OFF
                     </span>
                   </>
                 ) : (
-                  <span className="text-2xl font-light">${product.price.toFixed(2)}</span>
+                  <span className="text-2xl font-light">€{product.price.toFixed(2)}</span>
                 )}
               </div>
 
