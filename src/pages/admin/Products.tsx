@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -93,11 +93,11 @@ export default function Products() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <Label>Price (€)</Label>
+                  <Label>Price (£)</Label>
                   <Input type="number" step="0.01" />
                 </div>
                 <div className="space-y-2">
-                  <Label>Discount Price (€)</Label>
+                  <Label>Discount Price (£)</Label>
                   <Input type="number" placeholder="0.00" />
                 </div>
               </div>
@@ -170,11 +170,11 @@ export default function Products() {
                     <td className="p-4">
                         {product.discountPrice ? (
                           <>
-                            <span className="line-through text-muted-foreground mr-2">€{product.price}</span>
-                            <span className="font-medium">€{product.discountPrice}</span>
+                            <span className="line-through text-muted-foreground mr-2">£{product.price}</span>
+                            <span className="font-medium">£{product.discountPrice}</span>
                           </>
                         ) : (
-                          <span>€{product.price}</span>
+                          <span>£{product.price}</span>
                         )}
                     </td>
                     <td className="p-4">{product.stock}</td>
@@ -208,3 +208,4 @@ export default function Products() {
     </div>
   );
 }
+

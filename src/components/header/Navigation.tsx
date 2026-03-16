@@ -1,4 +1,4 @@
-import { ArrowRight, X, Heart } from "lucide-react";
+﻿import { ArrowRight, X, Heart } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useStore } from "@/contexts/StoreContext";
@@ -164,7 +164,7 @@ const Navigation = () => {
                           <p className="text-xs text-muted-foreground">{product.category}</p>
                           <h3 className="text-sm font-medium group-hover:underline">{product.name}</h3>
                           <p className="text-sm font-light mt-1">
-                            {product.discountPrice ? <><span className="line-through text-muted-foreground mr-1">€{product.price}</span>€{product.discountPrice}</> : `€${product.price}`}
+                            {product.discountPrice ? <><span className="line-through text-muted-foreground mr-1">£{product.price}</span>£{product.discountPrice}</> : `£${product.price}`}
                           </p>
                         </div>
                       </Link>
@@ -181,3 +181,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+

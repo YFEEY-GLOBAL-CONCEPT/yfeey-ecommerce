@@ -1,15 +1,15 @@
-import { Card, CardContent } from "@/components/ui/card";
+﻿import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import { useState } from "react";
 
 const customers = [
-  { id: 1, name: "John Doe", email: "john@example.com", orders: 12, spent: "€1,459.88", joined: "2024-08-15" },
-  { id: 2, name: "Jane Smith", email: "jane@example.com", orders: 8, spent: "€2,399.92", joined: "2024-09-02" },
-  { id: 3, name: "Mike Johnson", email: "mike@example.com", orders: 5, spent: "€899.95", joined: "2024-10-11" },
-  { id: 4, name: "Sarah Williams", email: "sarah@example.com", orders: 15, spent: "€3,199.85", joined: "2024-07-20" },
-  { id: 5, name: "Tom Brown", email: "tom@example.com", orders: 3, spent: "€449.97", joined: "2025-01-05" },
-  { id: 6, name: "Lisa Davis", email: "lisa@example.com", orders: 7, spent: "€1,119.93", joined: "2024-11-18" },
+  { id: 1, name: "John Doe", email: "john@example.com", orders: 12, spent: "£1,459.88", joined: "2024-08-15" },
+  { id: 2, name: "Jane Smith", email: "jane@example.com", orders: 8, spent: "£2,399.92", joined: "2024-09-02" },
+  { id: 3, name: "Mike Johnson", email: "mike@example.com", orders: 5, spent: "£899.95", joined: "2024-10-11" },
+  { id: 4, name: "Sarah Williams", email: "sarah@example.com", orders: 15, spent: "£3,199.85", joined: "2024-07-20" },
+  { id: 5, name: "Tom Brown", email: "tom@example.com", orders: 3, spent: "£449.97", joined: "2025-01-05" },
+  { id: 6, name: "Lisa Davis", email: "lisa@example.com", orders: 7, spent: "£1,119.93", joined: "2024-11-18" },
 ];
 
 export default function Customers() {
@@ -62,3 +62,4 @@ export default function Customers() {
     </div>
   );
 }
+

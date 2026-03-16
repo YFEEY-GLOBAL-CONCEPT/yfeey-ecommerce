@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+﻿import { useState, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
@@ -28,7 +28,7 @@ const Category = () => {
   const [selectedPriceRanges, setSelectedPriceRanges] = useState<string[]>([]);
 
   const categories = ["Clothing", "Shoes", "Bags"];
-  const priceRanges = ["Under €50", "€50 - €100", "€100 - €200", "Over €200"];
+  const priceRanges = ["Under £50", "£50 - £100", "£100 - £200", "Over £200"];
 
   const filteredProducts = useMemo(() => {
     let products = [...allProducts];
@@ -55,10 +55,10 @@ const Category = () => {
       products = products.filter((p) => {
         const price = p.discountPrice ?? p.price;
         return selectedPriceRanges.some((range) => {
-          if (range === "Under €50") return price < 50;
-          if (range === "€50 - €100") return price >= 50 && price <= 100;
-          if (range === "€100 - €200") return price >= 100 && price <= 200;
-          if (range === "Over €200") return price > 200;
+          if (range === "Under £50") return price < 50;
+          if (range === "£50 - £100") return price >= 50 && price <= 100;
+          if (range === "£100 - £200") return price >= 100 && price <= 200;
+          if (range === "Over £200") return price > 200;
           return true;
         });
       });
@@ -187,12 +187,12 @@ const Category = () => {
                           <div className="flex items-center gap-2">
                             {product.discountPrice ? (
                               <>
-                                <span className="text-xs line-through text-muted-foreground">€{product.price.toFixed(2)}</span>
-                                <span className="text-sm font-semibold text-destructive">€{product.discountPrice.toFixed(2)}</span>
+                                <span className="text-xs line-through text-muted-foreground">£{product.price.toFixed(2)}</span>
+                                <span className="text-sm font-semibold text-destructive">£{product.discountPrice.toFixed(2)}</span>
                                 <span className="text-[0.65rem] font-medium text-destructive bg-destructive/10 px-1 py-0.5 rounded">-{Math.round((1 - product.discountPrice / product.price) * 100)}%</span>
                               </>
                             ) : (
-                              <span className="text-sm font-medium">€{product.price.toFixed(2)}</span>
+                              <span className="text-sm font-medium">£{product.price.toFixed(2)}</span>
                             )}
                           </div>
                         </div>
@@ -219,3 +219,4 @@ const Category = () => {
 };
 
 export default Category;
+
