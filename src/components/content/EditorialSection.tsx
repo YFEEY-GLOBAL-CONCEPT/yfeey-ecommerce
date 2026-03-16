@@ -11,7 +11,7 @@ const EditorialSection = () => {
             Fashion Built on Purpose
           </h2>
           <p className="text-sm font-light text-foreground leading-relaxed">
-            Yfeey Store was born from a simple idea: quality fashion shouldn't break the bank. We curate clothing, shoes, and bags that blend modern design with everyday wearability — so you can look your best without compromise.
+            yfeey was born from a simple idea: quality fashion shouldn't break the bank. We curate clothing, shoes, and bags that blend modern design with everyday wearability — so you can look your best without compromise.
           </p>
           <Link to="/about/our-story" className="inline-flex items-center gap-1 text-sm font-light text-foreground hover:text-foreground/80 transition-colors duration-200">
             <span>Read our full story</span>
@@ -20,7 +20,7 @@ const EditorialSection = () => {
         </div>
         <div className="order-first md:order-last">
           <div className="w-full aspect-square overflow-hidden">
-            <img src={yfeeyTeam} alt="The Yfeey Store team" className="w-full h-full object-cover" />
+            <img src={yfeeyTeam} alt="The yfeey team" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>

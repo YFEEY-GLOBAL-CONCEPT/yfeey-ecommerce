@@ -116,6 +116,23 @@
   }
 
   body {
-    @apply bg-background text-foreground font-light;
+    @apply bg-background text-foreground font-light relative;
+  }
+
+  body::before {
+    content: "(yfeey template)";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 12vw;
+    font-weight: 800;
+    color: #141414;
+    opacity: 0.05;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 50;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 }

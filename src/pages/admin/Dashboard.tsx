@@ -2,25 +2,25 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, ShoppingCart, Package, Users, TrendingUp, TrendingDown } from "lucide-react";
 
 const stats = [
-  { title: "Total Revenue", value: "$45,231.89", change: "+20.1%", trend: "up", icon: DollarSign },
+  { title: "Total Revenue", value: "€45,231.89", change: "+20.1%", trend: "up", icon: DollarSign },
   { title: "Orders", value: "356", change: "+12.5%", trend: "up", icon: ShoppingCart },
   { title: "Products", value: "128", change: "+3", trend: "up", icon: Package },
   { title: "Customers", value: "2,350", change: "+180", trend: "up", icon: Users },
 ];
 
 const recentOrders = [
-  { id: "#ORD-001", customer: "John Doe", product: "Oversized Hoodie", amount: "$89.99", status: "Delivered" },
-  { id: "#ORD-002", customer: "Jane Smith", product: "Classic Sneakers", amount: "$129.99", status: "Processing" },
-  { id: "#ORD-003", customer: "Mike Johnson", product: "Crossbody Bag", amount: "$64.99", status: "Shipped" },
-  { id: "#ORD-004", customer: "Sarah Williams", product: "Denim Jacket", amount: "$89.99", status: "Pending" },
-  { id: "#ORD-005", customer: "Tom Brown", product: "Leather Boots", amount: "$189.99", status: "Delivered" },
+  { id: "#ORD-001", customer: "John Doe", product: "Oversized Hoodie", amount: "€89.99", status: "Delivered" },
+  { id: "#ORD-002", customer: "Jane Smith", product: "Classic Sneakers", amount: "€129.99", status: "Processing" },
+  { id: "#ORD-003", customer: "Mike Johnson", product: "Crossbody Bag", amount: "€64.99", status: "Shipped" },
+  { id: "#ORD-004", customer: "Sarah Williams", product: "Denim Jacket", amount: "€89.99", status: "Pending" },
+  { id: "#ORD-005", customer: "Tom Brown", product: "Leather Boots", amount: "€189.99", status: "Delivered" },
 ];
 
 const topProducts = [
-  { name: "Oversized Hoodie", sales: 142, revenue: "$12,778" },
-  { name: "Classic Sneakers", sales: 98, revenue: "$12,739" },
-  { name: "Crossbody Bag", sales: 87, revenue: "$5,654" },
-  { name: "Denim Jacket", sales: 76, revenue: "$6,839" },
+  { name: "Oversized Hoodie", sales: 142, revenue: "€12,778" },
+  { name: "Classic Sneakers", sales: 98, revenue: "€12,739" },
+  { name: "Crossbody Bag", sales: 87, revenue: "€5,654" },
+  { name: "Denim Jacket", sales: 76, revenue: "€6,839" },
 ];
 
 const statusColors: Record<string, string> = {

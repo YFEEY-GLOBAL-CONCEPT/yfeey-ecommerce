@@ -23,12 +23,12 @@ interface Order {
 }
 
 const initialOrders: Order[] = [
-  { id: "ORD-001", customer: "John Doe", email: "john@example.com", items: 3, total: "$284.97", status: "Delivered", date: "2025-03-07" },
-  { id: "ORD-002", customer: "Jane Smith", email: "jane@example.com", items: 1, total: "$129.99", status: "Processing", date: "2025-03-07" },
-  { id: "ORD-003", customer: "Mike Johnson", email: "mike@example.com", items: 2, total: "$154.98", status: "Shipped", date: "2025-03-06" },
-  { id: "ORD-004", customer: "Sarah Williams", email: "sarah@example.com", items: 1, total: "$89.99", status: "Pending", date: "2025-03-06" },
-  { id: "ORD-005", customer: "Tom Brown", email: "tom@example.com", items: 4, total: "$374.96", status: "Delivered", date: "2025-03-05" },
-  { id: "ORD-006", customer: "Lisa Davis", email: "lisa@example.com", items: 2, total: "$139.98", status: "Cancelled", date: "2025-03-05" },
+  { id: "ORD-001", customer: "John Doe", email: "john@example.com", items: 3, total: "€284.97", status: "Delivered", date: "2025-03-07" },
+  { id: "ORD-002", customer: "Jane Smith", email: "jane@example.com", items: 1, total: "€129.99", status: "Processing", date: "2025-03-07" },
+  { id: "ORD-003", customer: "Mike Johnson", email: "mike@example.com", items: 2, total: "€154.98", status: "Shipped", date: "2025-03-06" },
+  { id: "ORD-004", customer: "Sarah Williams", email: "sarah@example.com", items: 1, total: "€89.99", status: "Pending", date: "2025-03-06" },
+  { id: "ORD-005", customer: "Tom Brown", email: "tom@example.com", items: 4, total: "€374.96", status: "Delivered", date: "2025-03-05" },
+  { id: "ORD-006", customer: "Lisa Davis", email: "lisa@example.com", items: 2, total: "€139.98", status: "Cancelled", date: "2025-03-05" },
 ];
 
 const statusColors: Record<string, string> = {

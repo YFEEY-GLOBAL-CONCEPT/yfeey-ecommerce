@@ -17,7 +17,7 @@ const CheckoutHeader = () => {
 
           {/* Center - Logo - Absolutely positioned to ensure perfect centering */}
           <Link to="/" className="absolute left-1/2 transform -translate-x-1/2 text-xl font-semibold tracking-wider text-foreground">
-            YFEEY
+            yfeey
           </Link>
 
           {/* Right side - Support */}

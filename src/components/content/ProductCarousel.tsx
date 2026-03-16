@@ -19,12 +19,12 @@ interface Product {
 }
 
 const products: Product[] = [
-  { id: 1, name: "Oversized Hoodie", category: "Clothing", price: "$89.99", image: productHoodie, isNew: true },
-  { id: 2, name: "Classic Sneakers", category: "Shoes", price: "$129.99", image: productSneakers, isNew: true },
-  { id: 3, name: "Crossbody Bag", category: "Bags", price: "$64.99", image: productBag },
-  { id: 4, name: "Denim Jacket", category: "Clothing", price: "$119.99", discountPrice: "$89.99", image: productJacket },
-  { id: 5, name: "Leather Boots", category: "Shoes", price: "$189.99", image: productBoots },
-  { id: 6, name: "Canvas Tote", category: "Bags", price: "$49.99", image: productTote },
+  { id: 1, name: "Oversized Hoodie", category: "Clothing", price: "€89.99", image: productHoodie, isNew: true },
+  { id: 2, name: "Classic Sneakers", category: "Shoes", price: "€129.99", image: productSneakers, isNew: true },
+  { id: 3, name: "Crossbody Bag", category: "Bags", price: "€64.99", image: productBag },
+  { id: 4, name: "Denim Jacket", category: "Clothing", price: "€119.99", discountPrice: "€89.99", image: productJacket },
+  { id: 5, name: "Leather Boots", category: "Shoes", price: "€189.99", image: productBoots },
+  { id: 6, name: "Canvas Tote", category: "Bags", price: "€49.99", image: productTote },
 ];
 
 const ProductCarousel = () => {

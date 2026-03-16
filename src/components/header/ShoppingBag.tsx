@@ -36,9 +36,9 @@ const ShoppingBag = () => {
                         </div>
                         <div className="text-right">
                           {item.discountPrice ? (
-                            <><p className="text-xs line-through text-muted-foreground">${item.price.toFixed(2)}</p><p className="text-sm font-medium">${item.discountPrice.toFixed(2)}</p></>
+                            <><p className="text-xs line-through text-muted-foreground">€{item.price.toFixed(2)}</p><p className="text-sm font-medium">€{item.discountPrice.toFixed(2)}</p></>
                           ) : (
-                            <p className="text-sm font-light">${item.price.toFixed(2)}</p>
+                            <p className="text-sm font-light">€{item.price.toFixed(2)}</p>
                           )}
                         </div>
                       </div>
@@ -54,7 +54,7 @@ const ShoppingBag = () => {
                 ))}
               </div>
               <div className="border-t border-border pt-6 space-y-4">
-                <div className="flex justify-between"><span className="text-sm font-light">Subtotal</span><span className="text-sm font-medium">${cartTotal.toFixed(2)}</span></div>
+                <div className="flex justify-between"><span className="text-sm font-light">Subtotal</span><span className="text-sm font-medium">€{cartTotal.toFixed(2)}</span></div>
                 <p className="text-xs text-muted-foreground">Shipping and taxes calculated at checkout</p>
                 <Button asChild className="w-full rounded-none" size="lg" onClick={() => setIsShoppingBagOpen(false)}>
                   <Link to="/checkout">Proceed to Checkout</Link>

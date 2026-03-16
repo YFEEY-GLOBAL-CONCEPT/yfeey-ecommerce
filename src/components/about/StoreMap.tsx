@@ -9,28 +9,12 @@ interface Store {
 
 const stores: Store[] = [
   {
-    name: "YFEEY Madison Avenue",
-    address: "789 Madison Avenue, New York, NY 10065",
-    phone: "+1 (212) 555-0123",
-    hours: "Mon-Sat: 10AM-8PM, Sun: 12PM-6PM",
-    lat: 40.7614,
-    lng: -73.9776
-  },
-  {
-    name: "YFEEY Beverly Hills", 
-    address: "456 Rodeo Drive, Beverly Hills, CA 90210",
-    phone: "+1 (310) 555-0456",
-    hours: "Mon-Sat: 10AM-8PM, Sun: 12PM-6PM",
-    lat: 34.0696,
-    lng: -118.4014
-  },
-  {
-    name: "YFEEY SoHo",
-    address: "123 Spring Street, New York, NY 10012", 
-    phone: "+1 (212) 555-0789",
-    hours: "Mon-Sat: 11AM-8PM, Sun: 12PM-7PM",
-    lat: 40.7253,
-    lng: -74.0022
+    name: "yfeey isle of man",
+    address: "Isle of Man",
+    phone: "+44 624 403102",
+    hours: "Mon-Sat: 10AM-6PM, Sun: closed",
+    lat: 54.2361,
+    lng: -4.5481
   }
 ];
 

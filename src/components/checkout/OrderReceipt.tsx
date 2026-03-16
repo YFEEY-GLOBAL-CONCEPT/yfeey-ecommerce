@@ -78,7 +78,7 @@ const OrderReceipt = ({
         {/* Header */}
         <div className="flex items-center justify-between mb-8 pb-6" style={{ borderBottom: "1px solid #e5e5e5" }}>
           <div>
-            <h2 className="text-2xl font-semibold tracking-wider" style={{ color: "#2d1650" }}>YFEEY</h2>
+            <h2 className="text-2xl font-semibold tracking-wider uppercase" style={{ color: "#2d1650" }}>yfeey</h2>
             <p className="text-xs mt-1" style={{ color: "#888" }}>www.yfeey.com</p>
           </div>
           <div className="text-right">
@@ -130,8 +130,8 @@ const OrderReceipt = ({
                     {item.size && <p className="text-xs" style={{ color: "#888" }}>Size: {item.size}</p>}
                   </td>
                   <td className="text-center text-sm py-3">{item.quantity}</td>
-                  <td className="text-right text-sm py-3">${unitPrice.toFixed(2)}</td>
-                  <td className="text-right text-sm font-medium py-3">${(unitPrice * item.quantity).toFixed(2)}</td>
+                  <td className="text-right text-sm py-3">€{unitPrice.toFixed(2)}</td>
+                  <td className="text-right text-sm font-medium py-3">€{(unitPrice * item.quantity).toFixed(2)}</td>
                 </tr>
               );
             })}
@@ -142,21 +142,21 @@ const OrderReceipt = ({
         <div className="ml-auto" style={{ maxWidth: "250px" }}>
           <div className="flex justify-between py-1 text-sm">
             <span style={{ color: "#888" }}>Subtotal</span>
-            <span>${subtotal.toFixed(2)}</span>
+            <span>€{subtotal.toFixed(2)}</span>
           </div>
           <div className="flex justify-between py-1 text-sm">
             <span style={{ color: "#888" }}>Shipping ({shippingMethod})</span>
-            <span>{shippingCost === 0 ? "Free" : `$${shippingCost.toFixed(2)}`}</span>
+            <span>{shippingCost === 0 ? "Free" : `€${shippingCost.toFixed(2)}`}</span>
           </div>
           <div className="flex justify-between py-2 text-base font-semibold mt-2" style={{ borderTop: "2px solid #2d1650" }}>
             <span>Total</span>
-            <span style={{ color: "#2d1650" }}>${total.toFixed(2)}</span>
+            <span style={{ color: "#2d1650" }}>€{total.toFixed(2)}</span>
           </div>
         </div>
 
         {/* Footer */}
         <div className="mt-10 pt-6 text-center" style={{ borderTop: "1px solid #e5e5e5" }}>
-          <p className="text-xs" style={{ color: "#888" }}>Thank you for shopping with Yfeey Store!</p>
+          <p className="text-xs" style={{ color: "#888" }}>Thank you for shopping with yfeey!</p>
           <p className="text-xs mt-1" style={{ color: "#aaa" }}>Questions? Contact us at support@yfeey.com</p>
         </div>
       </div>
