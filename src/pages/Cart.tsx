@@ -1,4 +1,4 @@
-import Header from "../components/header/Header";
+﻿import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -58,15 +58,15 @@ const Cart = () => {
                       <div className="md:col-span-2 text-right">
                         {item.discountPrice ? (
                           <div>
-                            <span className="text-xs line-through text-muted-foreground block">€{item.price.toFixed(2)}</span>
-                            <span className="text-sm font-medium">€{item.discountPrice.toFixed(2)}</span>
+                            <span className="text-xs line-through text-muted-foreground block">£{item.price.toFixed(2)}</span>
+                            <span className="text-sm font-medium">£{item.discountPrice.toFixed(2)}</span>
                           </div>
                         ) : (
-                          <span className="text-sm">€{item.price.toFixed(2)}</span>
+                          <span className="text-sm">£{item.price.toFixed(2)}</span>
                         )}
                       </div>
                       <div className="md:col-span-2 text-right font-medium text-sm">
-                        €{(price * item.quantity).toFixed(2)}
+                        £{(price * item.quantity).toFixed(2)}
                       </div>
                     </div>
                   );
@@ -78,13 +78,13 @@ const Cart = () => {
                 <div className="bg-muted/20 p-6 sticky top-20">
                   <h2 className="text-lg font-light mb-6">Order Summary</h2>
                   <div className="space-y-3 text-sm">
-                    <div className="flex justify-between"><span className="text-muted-foreground">Subtotal</span><span>€{cartTotal.toFixed(2)}</span></div>
-                    <div className="flex justify-between"><span className="text-muted-foreground">Shipping</span><span>{cartTotal >= 50 ? "Free" : "€5.99"}</span></div>
+                    <div className="flex justify-between"><span className="text-muted-foreground">Subtotal</span><span>£{cartTotal.toFixed(2)}</span></div>
+                    <div className="flex justify-between"><span className="text-muted-foreground">Shipping</span><span>{cartTotal >= 50 ? "Free" : "£5.99"}</span></div>
                     <div className="border-t border-border pt-3 flex justify-between font-medium text-base">
-                      <span>Total</span><span>€{(cartTotal + (cartTotal >= 50 ? 0 : 5.99)).toFixed(2)}</span>
+                      <span>Total</span><span>£{(cartTotal + (cartTotal >= 50 ? 0 : 5.99)).toFixed(2)}</span>
                     </div>
                   </div>
-                  {cartTotal < 50 && <p className="text-xs text-muted-foreground mt-3">Add €{(50 - cartTotal).toFixed(2)} more for free shipping</p>}
+                  {cartTotal < 50 && <p className="text-xs text-muted-foreground mt-3">Add £{(50 - cartTotal).toFixed(2)} more for free shipping</p>}
                   <Button asChild className="w-full mt-6 h-12 rounded-none" size="lg">
                     <Link to="/checkout">Proceed to Checkout</Link>
                   </Button>
@@ -103,3 +103,4 @@ const Cart = () => {
 };
 
 export default Cart;
+

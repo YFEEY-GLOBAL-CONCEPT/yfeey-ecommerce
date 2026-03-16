@@ -10,12 +10,12 @@ interface Store {
 const stores: Store[] = [
   {
     name: "yfeey isle of man",
-    address: "Isle of Man",
-    phone: "+44 624 403102",
+    address: "Douglas, Isle of Man",
+    phone: "+44 123456789",
     hours: "Mon-Sat: 10AM-6PM, Sun: closed",
     lat: 54.2361,
-    lng: -4.5481
-  }
+    lng: -4.5481,
+  },
 ];
 
 const StoreMap = () => {
@@ -32,16 +32,20 @@ const StoreMap = () => {
         referrerPolicy="no-referrer-when-downgrade"
         className="w-full h-full"
       />
-      
+
       {/* Overlay with store markers */}
       <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm rounded-lg p-4 max-w-xs">
-        <h4 className="text-sm font-medium text-foreground mb-3">Our Locations</h4>
+        <h4 className="text-sm font-medium text-foreground mb-3">
+          Our Locations
+        </h4>
         <div className="space-y-2">
           {stores.map((store, index) => (
             <div key={index} className="text-xs">
               <div className="flex items-center gap-2 mb-1">
                 <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                <span className="font-medium text-foreground">{store.name}</span>
+                <span className="font-medium text-foreground">
+                  {store.name}
+                </span>
               </div>
               <p className="text-muted-foreground ml-4">{store.address}</p>
             </div>

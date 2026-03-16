@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { 
@@ -50,7 +50,7 @@ const ProductInfo = () => {
             <h1 className="text-2xl md:text-3xl font-light text-foreground">Pantheon</h1>
           </div>
           <div className="text-right">
-            <p className="text-xl font-light text-foreground">€2,850</p>
+            <p className="text-xl font-light text-foreground">£2,850</p>
           </div>
         </div>
       </div>

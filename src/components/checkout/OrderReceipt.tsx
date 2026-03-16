@@ -1,4 +1,4 @@
-import { useRef, useCallback } from "react";
+﻿import { useRef, useCallback } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
@@ -130,8 +130,8 @@ const OrderReceipt = ({
                     {item.size && <p className="text-xs" style={{ color: "#888" }}>Size: {item.size}</p>}
                   </td>
                   <td className="text-center text-sm py-3">{item.quantity}</td>
-                  <td className="text-right text-sm py-3">€{unitPrice.toFixed(2)}</td>
-                  <td className="text-right text-sm font-medium py-3">€{(unitPrice * item.quantity).toFixed(2)}</td>
+                  <td className="text-right text-sm py-3">£{unitPrice.toFixed(2)}</td>
+                  <td className="text-right text-sm font-medium py-3">£{(unitPrice * item.quantity).toFixed(2)}</td>
                 </tr>
               );
             })}
@@ -142,15 +142,15 @@ const OrderReceipt = ({
         <div className="ml-auto" style={{ maxWidth: "250px" }}>
           <div className="flex justify-between py-1 text-sm">
             <span style={{ color: "#888" }}>Subtotal</span>
-            <span>€{subtotal.toFixed(2)}</span>
+            <span>£{subtotal.toFixed(2)}</span>
           </div>
           <div className="flex justify-between py-1 text-sm">
             <span style={{ color: "#888" }}>Shipping ({shippingMethod})</span>
-            <span>{shippingCost === 0 ? "Free" : `€${shippingCost.toFixed(2)}`}</span>
+            <span>{shippingCost === 0 ? "Free" : `£${shippingCost.toFixed(2)}`}</span>
           </div>
           <div className="flex justify-between py-2 text-base font-semibold mt-2" style={{ borderTop: "2px solid #2d1650" }}>
             <span>Total</span>
-            <span style={{ color: "#2d1650" }}>€{total.toFixed(2)}</span>
+            <span style={{ color: "#2d1650" }}>£{total.toFixed(2)}</span>
           </div>
         </div>
 
